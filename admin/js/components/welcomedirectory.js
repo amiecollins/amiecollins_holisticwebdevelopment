@@ -1,4 +1,4 @@
-import links from './components/links.js'
+import links from './links.js'
 
 export default {
     data: function () {
@@ -42,7 +42,7 @@ export default {
         
     },
 
-    components: function () {
+    components: {
         links
     },
 

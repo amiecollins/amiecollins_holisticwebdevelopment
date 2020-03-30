@@ -1,6 +1,10 @@
 export default {
     data: function () {
         return {
+            logo: {
+                top: "",
+                bot: ""
+            },
             menu: false,
             menulinks: [
                 {
@@ -46,7 +50,7 @@ export default {
     template: `
         <header>
             <h2 class="hidden">Main Navigation</h2>
-            <div class="trees"><img :src="logo.top" alt="Amie Collins"><div class="menu-button" @click="menu = true"></div>
+            <div class="trees"><img :src="logo.top" alt="Amie Collins"><div class="menu-button" @click="menu = true">menu</div></div>
             <div class="bottom"><img :src="logo.bot" alt="Holistic Web Developer"></div>
             <section v-if="menu">
                 <nav>

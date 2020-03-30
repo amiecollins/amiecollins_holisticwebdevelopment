@@ -1,10 +1,11 @@
-import directory from './components/welcomedirectory.js'
+import directory from './welcomedirectory.js'
+import links from './links.js'
 
 export default {
     data: function () {
         return {
-            background: "/media/video/sunrise.mp4",
-            
+            background: "./media/video/sunrise.mp4",
+            logo: "",
             dw: {
                 logo: "",
                 links: [
@@ -37,8 +38,8 @@ export default {
         
     },
 
-    components: function () {
-        directory
+    components: {
+        directory, links
     },
 
     template: `
@@ -55,7 +56,7 @@ export default {
                 </div></a>
                 <links links="dw.links"></links>
             </nav>
-            <div class="logo-main"><img :src="logo.url" alt="Amie Collins; holistic web developer"></div>
+            <div class="logo-main"><img :src="logo" alt="Amie Collins; holistic web developer"></div>
             <directory></directory>
         </section>
     </video>`

@@ -1,7 +1,7 @@
 import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.esm.browser.js'
-import welcomepage from '/components/welcomepage.js'
-import menu from '/components/menu.js'
-import projects from '/components/projects.js'
+import welcomepage from './components/welcomepage.js'
+import headermenu from './components/menu.js'
+import projects from './components/projects.js'
 
 const vueIndex = (() => {
 
@@ -16,7 +16,7 @@ const vueIndex = (() => {
         },
 
         components: {
-            welcomepage, projects, menu
+            welcomepage, projects, headermenu
         }
 
     }).$mount("#index");

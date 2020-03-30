@@ -1,3 +1,5 @@
+import links from './links.js'
+
 export default {
     data: function () {
         return {
@@ -10,8 +12,12 @@ export default {
     },
 
     props: [
-        project
+        'project'
     ],
+
+    components: {
+        links
+    },
 
     template: `
         <div class="project-view">

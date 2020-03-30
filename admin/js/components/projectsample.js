@@ -1,4 +1,4 @@
-import projectview from './components/projectview.js'
+import projectview from './projectview.js'
 
 export default {
     data: function () {
@@ -12,10 +12,10 @@ export default {
     },
 
     props: [
-        project
+        'project'
     ],
 
-    components: function () {
+    components: {
         projectview
     },
 

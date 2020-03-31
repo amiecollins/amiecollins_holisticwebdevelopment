@@ -13,5 +13,5 @@ export default {
         'links'
     ],
 
-    template: `<ul><li v-for="link in links"><a :href="link.a"><img :src="link.src" :alt="link.alt"></a></li></ul>`
+    template: `<ul class="link-container"><li v-for="link in links"><a :href="link.a"><img class="link" :src="link.src" :alt="link.alt"></a></li></ul>`
 }

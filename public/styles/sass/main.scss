@@ -1,0 +1,95 @@
+@import "_reset.scss";
+@import "_vars.scss";
+
+@import "components/_links.scss";
+@import "components/_directory.scss";
+@import "components/_menu.scss";
+@import "components/_parallax.scss";
+@import "components/_projects.scss";
+@import "components/_projectview.scss";
+@import "components/_video.scss";
+
+#index {
+    margin: 10%;
+}
+
+.homebg {
+    height: 100%;
+    position: fixed;
+    z-index: -5;
+    top: 0px;
+    left: 0px;
+}
+
+.hidden {
+    display: none;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-main {
+    width: 50%;
+    height: auto;
+    margin: 150px auto;
+}
+
+.digital-witch {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: $backgroundcolor;
+    margin: 0px;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 10px solid $headercolor;
+}
+
+.digital-witch .link-container {
+    width: 100px;
+    background-color: $backgroundcolor;
+}
+
+.dw-top {
+    display: flex;
+    flex-direction: row;
+    margin: 15px 0px;
+}
+
+.dw-top img {
+    width: auto;
+    height: 60px;
+}
+
+.dw-top div {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.dw-top div h2 {
+    font-size: 28px;
+    color: #5A2066;
+}
+
+.dw-top div h3 {
+    color: #991B2C;
+    font-family: $mainfont;
+    font-size: 22px;
+}
+
+
+@media screen and (min-width: 750px) {
+
+    .homebg {
+        width: 100%;
+        position: fixed;
+        z-index: -5;
+        top: 0;
+        left: 0;
+    }
+    
+}

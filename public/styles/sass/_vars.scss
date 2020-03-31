@@ -1,0 +1,49 @@
+$mainfont: novecento-carved-narrow, sans-serif;
+$headerfont: adorn-condensed-sans, sans-serif;
+$scriptfont: adorn-garland, sans-serif;
+
+$darkcolor: #183233;
+$lightcolor: #ADFBFF;
+$brightcolor: #6AB4B8;
+$browncolor: #3D1B04;
+$subtitle: #B8896A;
+
+$backgroundcolor: #FFFFFF;
+$highlightcolor: $lightcolor;
+$linkcolor: $brightcolor;
+$headercolor: $darkcolor;
+$subtitlecolor: $browncolor;
+$maincolor: #000000;
+
+body {
+    color: $maincolor;
+    font-family: $mainfont;
+    font-size: 22px;
+}
+
+h1 {
+    font-size: 48px;
+    font-family: $headerfont;
+    color: $headercolor;
+}
+
+h2 {
+    font-size: 32px;
+    font-family: $headerfont;
+    color: $subtitlecolor;
+}
+
+h3 {
+    font-size: 32px;
+    font-family: $scriptfont;
+    color: $headercolor;
+}
+
+a {
+    color: $linkcolor;
+    transition: 0.2s;
+}
+
+a:hover {
+    text-shadow: 0px 0px 3px $highlightcolor;
+}

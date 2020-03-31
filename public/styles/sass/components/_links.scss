@@ -3,7 +3,7 @@
     height: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin: 0 auto;
 }
 
@@ -12,4 +12,9 @@
     height: auto;
     z-index: 5;
     padding: 5px;
+    transition: 0.2s;
+}
+
+.link:hover {
+    opacity: 0.5;
 }

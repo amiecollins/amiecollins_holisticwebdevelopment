@@ -1,0 +1,93 @@
+.projects {
+    background-color: $backgroundcolor;
+    width: 100%;
+    left: 0px;
+    height: 80%;
+}
+
+.projects {
+    padding: 25px 0px 15px 0px;
+    border-top: 2px solid $headercolor;
+}
+
+.projects h2 {
+    text-align: left;
+    font-size: 30px;
+    padding-right: 10px;
+    line-height: 1.5;
+}
+
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+
+.search-bar img {
+    height: 30px;
+    padding: 0px 5px;
+}
+
+.search-bar input {
+    height: 30px;
+    width: 50%;
+    font-size: 20px;
+    font-family: $mainfont;
+    padding: 0px 5px;
+}
+
+.filter-tag {
+    padding: 8px;
+}
+
+.filters {
+    width: 94%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgba($maincolor, $alpha: 0.1);
+    margin: 3%;
+}
+
+.filter {
+    padding: 8px;
+    transition: 0.2s;
+}
+
+.filter:hover {
+    color: $headercolor;
+    letter-spacing: 1px;
+}
+
+.results {
+    margin: 3%;
+    padding: 3%;
+    height: 68%;
+    width: 88%;
+    background-color: rgba($highlightcolor, $alpha: 0.2);
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.result {
+    flex: 1 1 250px;
+    height: 150px;
+    transition: 1s;
+    padding: 10px;
+    padding-top: 150px;
+    overflow: hidden;
+    background-position: center;
+    background-size: contain;
+}
+
+.result:hover {
+    padding-top: 10px;
+    border: 3px ridge rgba($maincolor, $alpha: 0.6);
+    background-color: rgba($maincolor, $alpha: 0.1);
+}
+

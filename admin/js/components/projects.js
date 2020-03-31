@@ -5,12 +5,12 @@ export default {
     data: function () {
         return {
             query: "#featured",
-            icon: "",
+            icon: "./media/icons/search.svg",
             results: [
 
             ],
             filters: {
-                show: false,
+                img: "./media/icons/add.svg",
                 filters: [
                     "#featured", "#frontend", "#backend", "#fullstack", "#graphicdesign"
                 ]
@@ -20,22 +20,23 @@ export default {
     
     methods: {
         search: function () {
-            query = this.query;
-            results = projects;
+            var query = this.query;
+            var results = projects;
             query = this.break(query);
             var check = [ "filters", "name", "description" ];
-            for (project in results) {
-                score = 0;
-                for (query in query) {
+            for (var project in results) {
+                var score = 0;
+                console.log(project);
+                for (var activequery in query) {
                     for (filter in project.filters) {
-                        if (query.includes(filter)) {
+                        if (activequery.includes(filter)) {
                             score++;
                         }
                     }
-                    if (project.description.includes(query)) {
+                    if (project.description.includes(activequery)) {
                         score++;
                     }
-                    if (project.name.includes(query)) {
+                    if (project.name.includes(activequery)) {
                         score++;
                     }
                 }
@@ -59,17 +60,15 @@ export default {
 
     template: `
         <section class="projects">
-            <div class="projects-nav">
-                <h2>Browse Projects</h2>
                 <div class="search">
-                    <div class="search-bar"><img :src="icon" alt="search icon" @click="search"><input type="text" v-model="query" @change="search"><img :src="filters.img" alt="Add Filters" @click="filters.show = true"></div>
-                    <div v-show="filters.show" class="filters"><a class="filter" v-for="filter in filters.filters"><span v-text="filter" @click="query = query + ' ' + filter"></span></a></div>
+                    <div class="search-bar">
+                        <h2>Browse Projects</h2><img :src="icon" alt="search icon" @click="search"><input type="text" v-model="query" @change="search"></div>
+                        <div class="filters"><span class="filter-tag">filters:</span><a class="filter" v-for="filter in filters.filters"><span v-text="filter" @click="query = query + ' ' + filter"></span></a></div>
                 </div>
                 <div class="results">
                     <div v-for="result in search.results">
                         <projectsample project="result"></projectsample>
                     </div>
                 </div>
-            </div>
         </section>`
 }

@@ -2,8 +2,9 @@ export default {
     data: function () {
         return {
             logo: {
-                top: "",
-                bot: ""
+                top: "./media/icons/logo-top.svg",
+                mid: "./media/icons/name-white.svg",
+                bot: "./media/icons/tag.svg"
             },
             menu: false,
             menulinks: [
@@ -50,16 +51,18 @@ export default {
     template: `
         <header>
             <h2 class="hidden">Main Navigation</h2>
-            <div class="trees"><img :src="logo.top" alt="Amie Collins"><div class="menu-button" @click="menu = true">menu</div></div>
+            <div class="trees" :style="'background-image:url(' + logo.top +')'"><img :src="logo.mid" alt="Amie Collins"><div class="menu-button" @click="menu = true">menu</div></div>
             <div class="bottom"><img :src="logo.bot" alt="Holistic Web Developer"></div>
             <section v-if="menu">
-                <nav>
-                    <h3 class="hidden">Collapseable Menu</h3>
-                    <ul class="menu-links">
-                        <li v-for="link in menulinks"><a :href="link.a" v-text="link.name"></a></li>
-                        <li @click="menu = false">Exit Menu</li>
-                    </ul>
-                </nav>
-            </section>
-        </header>`
+            <nav class="burger-menu">
+                <h3 class="hidden">Collapseable Menu</h3>
+                <ul class="menu-links">
+                    <li v-for="link in menulinks"><a :href="link.a" v-text="link.name"></a></li>
+                    <li @click="menu = false">Exit Menu</li>
+                </ul>
+            </nav>
+        </section>
+        </header>
+        
+        `
 }

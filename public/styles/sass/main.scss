@@ -1,3 +1,5 @@
+// sass --watch public/styles/sass:public/styles/css --style compressed
+
 @import "_reset.scss";
 @import "_vars.scss";
 
@@ -28,31 +30,43 @@
 .home {
     display: flex;
     flex-direction: column;
+    margin-bottom: 85px;
 }
 
 .logo-main {
     width: 50%;
     height: auto;
-    margin: 150px auto;
+    margin: 125px auto 100px auto;
 }
 
 .digital-witch {
     position: absolute;
-    width: 100%;
+    width: 96%;
     top: 0px;
     left: 0px;
     background-color: $backgroundcolor;
     margin: 0px;
     height: auto;
-    padding: 10px;
+    padding: 2%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     border-bottom: 10px solid $headercolor;
 }
 
 .digital-witch .link-container {
-    width: 100px;
+    width: auto;
+    max-height: 100px;
+    padding: 10px;
+    margin: auto auto auto 0px;
     background-color: $backgroundcolor;
+    justify-content: space-evenly;
+}
+
+.digital-witch .link-container .link {
+    max-width: 35px;
+    flex: 0 1 15px;
+    padding: 3px;
 }
 
 .dw-top {
@@ -79,6 +93,24 @@
     color: #991B2C;
     font-family: $mainfont;
     font-size: 22px;
+}
+
+footer {
+    background-color: $headercolor;
+    color: $backgroundcolor;
+    font-size: 20px;
+    text-align: right;
+    width: 96%;
+    position: absolute;
+    left: 0px;
+    padding: 2%;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0px;
 }
 
 

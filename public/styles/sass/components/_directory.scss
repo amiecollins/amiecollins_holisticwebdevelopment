@@ -1,0 +1,16 @@
+.about {
+    background-color: $backgroundcolor;
+    padding: 20px;
+    max-height: 50px;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.about:hover {
+    max-height: 500px;
+}
+
+.about ul {
+    margin-top: 20px;
+    justify-content: space-between;
+}

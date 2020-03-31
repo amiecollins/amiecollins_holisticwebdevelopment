@@ -25,7 +25,7 @@ export default {
             <p v-text="project.description"></p>
             <div>
                 <div class="filters"><span v-for="filter in project.filters"><a class="project-filter" v-text="filter"></a></span></div>
-                <img class="project-select" src="/public/media/icons/more.svg" alt="See More" @click="show = true">
+                <img class="project-select" src="/public/media/icons/add.svg" alt="See More" @click="show = true">
             </div>
             <div v-if="show"><section class="view"><projectview project="project"></projectview><div @click="show = false">< Go Back</div></section></div>
         </div>`

@@ -3,7 +3,7 @@ import links from './links.js'
 export default {
     data: function () {
         return {
-            logo: "./media/images/name-black.png",
+            logo: "./media/icons/name-black.svg",
             homelinks: [
                 {
                     a: "https://www.facebook.com/amiecollinsdevelopment/",

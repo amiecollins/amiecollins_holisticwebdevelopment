@@ -1,9 +1,10 @@
 .about {
     background-color: $backgroundcolor;
     padding: 20px;
-    max-height: 50px;
+    max-height: 100px;
     transition: 0.5s;
     overflow: hidden;
+    opacity: 0.8;
 }
 
 .about:hover {
@@ -13,4 +14,15 @@
 .about ul {
     margin-top: 20px;
     justify-content: space-between;
+}
+
+@media screen and (min-width: 1150px) {
+
+    .about {
+        flex-direction: row;
+        width: 520px;
+        padding: 25px;
+        margin: 30px;
+    }
+
 }

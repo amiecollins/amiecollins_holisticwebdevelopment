@@ -4,7 +4,7 @@ import links from './links.js'
 export default {
     data: function () {
         return {
-            background: "./media/video/sunrise.mp4",
+            background: "./media/video/air.mp4",
             logo: "./media/icons/logo-full.svg",
             dw: {
                 logo: "./media/icons/dw-color.svg",
@@ -46,7 +46,8 @@ export default {
     
         <section class="home"><video :src="background" alt="background forest" class="parallax homebg" autoplay muted loop></video>
             <h1 class="hidden">Welcome to the Portfolio of Amie Collins.</h1>
-            <nav class="digital-witch">
+            <div class="logo-main"><img :src="logo" alt="Amie Collins holistic web developer"></div>
+            <div class="home-content"><nav class="digital-witch">
                 <a href="www.digitalwitch.ca"><div class="dw-top">
                     <img :src="dw.logo" alt="logo for Digital Witch Designs">
                     <div>
@@ -56,8 +57,8 @@ export default {
                 </div></a>
                 <links :links="dw.links"></links>
             </nav>
-            <div class="logo-main"><img :src="logo" alt="Amie Collins holistic web developer"></div>
-            <directory></directory>
+            
+            <directory></directory></div>
         </section>
     `
 }

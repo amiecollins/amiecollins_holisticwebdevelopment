@@ -56,8 +56,6 @@ export default {
             return item;
         },
         addfilter: function (filter) {
-            //var activequery = this.break(this.query);
-            //console.log(activequery);
             if (this.query.includes(filter)) {
                this.query = this.query.replace(filter, "");
             } else {
@@ -84,7 +82,7 @@ export default {
                 </div>
                 <div class="results">
                     <div v-for="result in results">
-                        <projectsample v-bind:addFilter="addfilter" :project="result"></projectsample>
+                        <projectsample v-on:addfilter="addfilter" :project="result"></projectsample>
                     </div>
                 </div>
         </section>`

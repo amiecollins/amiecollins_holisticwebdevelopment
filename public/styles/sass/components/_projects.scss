@@ -20,13 +20,15 @@
 .search-bar {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin: 20px;
 }
 
 .search-bar img {
     height: 30px;
     padding: 0px 5px;
+    margin-left: auto;
+    margin-right: 10px;
 }
 
 .search-bar input {
@@ -54,6 +56,7 @@
 .filter {
     padding: 8px;
     transition: 0.2s;
+    cursor: pointer;
 }
 
 .filter:hover {
@@ -64,7 +67,7 @@
 .results {
     margin: 3%;
     padding: 3%;
-    height: 68%;
+    height: 60%;
     width: 88%;
     background-color: rgba($highlightcolor, $alpha: 0.2);
     overflow: auto;
@@ -83,10 +86,10 @@
 }
 
 .result {
-    flex: 0 1 200px;
+    max-width: 200px;
     max-height: 0px;
     transition: 1s;
-    padding: 0px;
+    padding: 0px 25px;
     padding-top: 150px;
     padding-bottom: -200px;
     overflow: hidden;
@@ -104,6 +107,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     margin-bottom: -150px;
+    pointer-events: none;
 }
 
 .result-container:hover .result-bg {
@@ -129,6 +133,7 @@
 .result div {
     display: flex;
     flex-direction: row;
+    align-items: flex-end;
     justify-content: space-between;
 }
 
@@ -145,9 +150,18 @@
 .project-select {
     min-width: 35px;
     height: auto;
-    padding: 5px;
+    padding: 10px;
 }
 
 .project-filter {
     padding: 2px;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1100px) {
+    
+    .search-bar input {
+        width: 70%;
+    }
+
 }

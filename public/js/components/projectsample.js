@@ -25,7 +25,7 @@ export default {
             <span class="project-description-container" @click="show = true"><p class="project-description" v-text="project.description"></p>...</span>
             <div class="result-more">
                 <div class="filters"><span class="project-filter" v-for="filter in project.filters"><a v-on:click="$emit('addfilter', '#' + filter)"  v-text="'#' + filter"></a></span></div>
-                <img class="project-select" src="/public/media/icons/more.svg" alt="See More" @click="show = true">
+                <img class="project-select" src="./media/icons/more.svg" alt="See More" @click="show = true">
             </div>
             <div v-if="show"><section class="view"><div class="back" v-if="show" @click="show = false">Back</div><projectview :project="project"></projectview></section></div>
         </div></section>`

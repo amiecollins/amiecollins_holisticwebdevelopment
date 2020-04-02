@@ -78,7 +78,7 @@ export default {
                 <div class="search">
                     <div class="search-bar">
                         <h2>Browse Projects</h2><img :src="icon" alt="search icon" @click="search"><input type="text" v-model="query" @change="search"></div>
-                        <div class="filters"><span class="filter-tag">filters:</span><a class="filter" v-for="filter in filters.filters"><span v-text="filter" @click="addfilter(filter)"></span></a></div>
+                        <div class="filters"><span class="filter-tag">click to add or remove filters:</span><a class="filter" v-for="filter in filters.filters"><span v-text="filter" @click="addfilter(filter)"></span></a><span class="filter" @click="query = ''">clear selection</span></div>
                 </div>
                 <div class="results">
                     <div v-for="result in results">

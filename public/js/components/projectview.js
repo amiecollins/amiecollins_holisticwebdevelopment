@@ -20,19 +20,22 @@ export default {
     },
 
     template: `
-        <div class="project-view">
+        <section class="project-view">
             <div class="project-info">
                 <img class="project-logo" :src="project.logo" :alt="'Logo for ' + project.name">
-                <h1 class="project-title" v-text="project.name"></h1>
+                <div class="project-data"><h1 class="project-title" v-text="project.name"></h1>
+                <span class="project-date" v-text="'Updated ' + project.date"></span>
+                <p v-text="project.description"></p>
+                <links :links="project.links"></links></div>
             </div> 
-            completed <span class="project-date" v-text="project.date"></span>
-            <links links="project.links"></links>
-            <section class="project-content" v-for="content in project.contents">
-                <img class="project-image" :src="content.img" :alt="content.alt">
-                <div class="content-text">
-                    <h2 v-text="content.title"></h2>
-                    <p v-text="content.description"></p>
+            <section class="project-content-container"><h2 class="hidden">Learn More...</h2>
+                <div class="project-content" v-for="content in project.contents">
+                    <img class="project-image" :src="content.img" :alt="content.alt">
+                    <div class="content-text">
+                        <h3 v-text="content.title"></h3>
+                        <p v-text="content.description"></p>
+                    </div>
                 </div>
             </section>
-        </div>`
+        </section>`
 }

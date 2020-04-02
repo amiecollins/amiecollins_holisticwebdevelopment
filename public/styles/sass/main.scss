@@ -11,16 +11,20 @@
 @import "components/_projectview.scss";
 @import "components/_video.scss";
 
+
 #index {
     margin: 10%;
+    overflow-y: hidden;
 }
 
 .homebg {
-    height: 100%;
+    max-height: 100%;
     position: fixed;
     z-index: -5;
     top: 0px;
     left: 0px;
+    right: 0px;
+    bottom: 0px;
 }
 
 .hidden {
@@ -34,10 +38,11 @@
 }
 
 .logo-main {
-    width: 50%;
+    width: 80%;
     height: auto;
     margin: 125px auto 100px auto;
 }
+
 
 .digital-witch {
     position: absolute;
@@ -49,22 +54,20 @@
     height: auto;
     padding: 2%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     border-bottom: 10px solid $headercolor;
 }
 
 .digital-witch .link-container {
-    width: auto;
-    max-height: 100px;
-    padding: 10px;
-    margin: auto 0px auto auto;
-    background-color: $backgroundcolor;
+    width: 100%;
+    max-height: 30px;
+    margin: auto auto;
     justify-content: space-evenly;
 }
 
 .digital-witch .link-container .link {
-    max-width: 35px;
+    max-width: 28px;
     flex: 0 1 15px;
     padding: 3px;
 }
@@ -72,27 +75,29 @@
 .dw-top {
     display: flex;
     flex-direction: row;
-    margin: 15px 0px;
+    margin: 0px;
+    justify-content: center;
 }
 
 .dw-top img {
     width: auto;
-    height: 60px;
+    height: 50px;
 }
 
 .dw-top div {
     padding-left: 10px;
     padding-top: 10px;
 }
+
 .dw-top div h2 {
-    font-size: 28px;
+    font-size: 16px;
     color: #5A2066;
 }
 
 .dw-top div h3 {
     color: #991B2C;
     font-family: $mainfont;
-    font-size: 22px;
+    font-size: 14px;
 }
 
 footer {
@@ -113,11 +118,76 @@ footer {
     left: 0px;
 }
 
+@media screen and (min-width: 300px) {
+
+    .logo-main {
+        width: 50%;
+        margin: 125px auto 100px auto;
+    }
+
+    .dw-top div h2 {
+        font-size: 22px;
+    }
+
+    .dw-top div h3 {
+        font-size: 18px;
+    }
+
+    .dw-top {
+        margin: 5px 0px;
+    }
+
+    .digital-witch .link-container {
+        margin: auto 0px auto auto;
+        padding: 5px;
+    }
+
+    .digital-witch .link-container .link {
+        max-width: 35px;
+    }
+}
+
+@media screen and (min-width: 450px) {
+
+    .digital-witch {
+        flex-direction: row;
+    }
+
+    .digital-witch .link-container {
+        max-height: 100px;
+        max-width: 100px;
+        margin: auto 0px auto auto;
+        justify-content: space-evenly;
+        margin: auto 0px auto auto;
+    }
+
+    .digital-witch .link-container .link {
+        max-width: 35px;
+    }
+
+    .dw-top div h2 {
+        font-size: 28px;
+    }
+
+    .dw-top div h3 {
+        font-size: 22px;
+    }
+    
+    .dw-top {
+        margin: 15px 0px;
+    }
+
+    .dw-top img {
+        height: 60px;
+    }
+
+
+}
 
 @media screen and (min-width: 1150px) {
 
     #index {
-        margin: 50px;
+        margin: 10%;
     }
 
     .home {
@@ -157,8 +227,6 @@ footer {
         background-color: $backgroundcolor;
         justify-content: space-evenly;
     }
-
-    
 
     .logo-main {
         width: 500px;

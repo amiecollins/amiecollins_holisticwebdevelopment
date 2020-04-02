@@ -15,6 +15,7 @@ const vueIndex = (() => {
 
         },
 
+
         components: {
             welcomepage, projects, headermenu
         }

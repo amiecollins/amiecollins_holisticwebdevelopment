@@ -44,7 +44,7 @@ export default {
 
     template: `
     
-        <section class="home"><video :src="background" alt="background forest" class="parallax homebg" autoplay muted loop></video>
+        <section class="home"><video :src="background" alt="background forest" class="homebg" autoplay muted loop></video>
             <h1 class="hidden">Welcome to the Portfolio of Amie Collins.</h1>
             <div class="logo-main"><img :src="logo" alt="Amie Collins holistic web developer"></div>
             <div class="home-content"><nav class="digital-witch">

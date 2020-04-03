@@ -64,7 +64,7 @@
 .results {
     margin: 3%;
     padding: 3%;
-    height: 60%;
+    height: 80%;
     width: 88%;
     background-color: rgba($highlightcolor, $alpha: 0.2);
     overflow: auto;
@@ -187,6 +187,10 @@
         height: 30px;
         margin-bottom: 0px;
         margin-left: auto;
+    }
+
+    .results {
+        height: 60%;
     }
 
 }

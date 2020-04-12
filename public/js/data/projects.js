@@ -70,12 +70,12 @@ export default [
     
     {
         name: "PAWP Heroes: HIV Prevention",
-        date: "April 12, 2020",
+        date: "April 12th 2020",
         logo: "./media/icons/pawp_logo.svg",
         filters: [
             "fullstack", "frontend", "backend"
         ],
-        description: "",
+        description: "Final Project for Winter 2020 Semester; HIV & AIDS Prevention Website and Marketing Campaign",
         links: [
             {
                 a: "https://github.com/amiecollins/CollierV_CollinsA_CunhaR_HollenbeckK_FIP3",
@@ -91,7 +91,50 @@ export default [
                 description: "This project is still being updated"
             }
         ]
+    },
+    {
+        name: "Etsy Journal Print-Outs",
+        date: "On Sale April 30th 2020",
+        logo: "./media/images/journal_ad.png",
+        filters: [
+            "new", "graphicdesign"
+        ],
+        description: "Minimalist BUJO Inspired Printable Journal Sheets. Daily, Weekly and Monthly planning, tracking, reflections and pages for all stages of life from school, work to basic habit completion.",
+        links: [
+            {
+                a: "https://www.etsy.com/shop/DigitalWitchDesigns",
+                src: "./media/icons/etsy.svg",
+                alt: "Buy the Complete Set on Etsy"
+            }
+        ],
+        contents: [
+            {
+                title: "Daily Reflection",
+                img: "./media/images/dailyReflectionA.jpg",
+                alt: "Daily Reflection Page",
+                description: "This collection contains various Planners, Trackers & Reflections (Daily, Weekly & Monthly) to keep you on the path towards your goals."
+            },
+            {
+                title: "100 Day Habit Tracker",
+                img: "./media/images/100dayhabittracker.jpg",
+                alt: "100 Day Habit Tracker Page",
+                description: "As well as planning and executing trackers, there are habit trackers to create a rewards system as well as an ability to reflect on the frequency of our habits."
+            },
+            {
+                title: "Project Planner",
+                img: "./media/images/projectplan.jpg",
+                alt: "Project Planning Page",
+                description: "This page is used for making an outline of a project and help chunk it out and figure out a timeline of completion."
+            },
+            {
+                title: "Research Planner",
+                img: "./media/images/researchplan_1.jpg",
+                alt: "Research Planning Page",
+                description: "Want to learn a new skill or study a new subject? This is an outline to help create notes towards learning something new, using the Feynman Technique."
+            }
+        ]
     }
+]
     // ,
     
     // {
@@ -118,4 +161,3 @@ export default [
     //         }
     //     ]
     // }
-]

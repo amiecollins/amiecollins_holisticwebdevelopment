@@ -156,8 +156,8 @@
     }
 
     .project-image {
-        max-width: 400px;
-        height: auto;
+        max-width: auto;
+        max-height: auto;
     }
 
     .project-content {
@@ -173,5 +173,19 @@
     .content-text {
         max-width: 400px;
     }
+
+}
+
+
+@media screen and (min-width: 1300px) {
+
+        .project-view {
+            width: 80%;
+            padding: 2% 10%;
+        }
+        
+        .project-data {
+            max-width: 500px;
+        }
 
 }

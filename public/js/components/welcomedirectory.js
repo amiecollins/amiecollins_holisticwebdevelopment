@@ -11,6 +11,11 @@ export default {
                     alt: "Like my Facebook Page"
                 },
                 {
+                    a: "https://www.freelancer.com/u/holisticwebdev",
+                    src: "./media/icons/freelancer.svg",
+                    alt: "Hire me on Freelancer"
+                },
+                {
                     a: "https://github.com/amiecollins",
                     src: "./media/icons/github.svg",
                     alt: "Check out my GitHub"

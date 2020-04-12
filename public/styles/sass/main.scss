@@ -191,8 +191,8 @@ footer {
     }
 
     .homebg {
-        width: 100%;
-        max-height: 200%;
+        min-width: 100%;
+        min-height: 120%;
     }
 
     .home {
